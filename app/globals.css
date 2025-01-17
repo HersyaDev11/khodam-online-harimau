@@ -24,10 +24,79 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .responsive-padding {
+    padding: 1rem; /* Default padding */
+  }
+
+  @screen sm {
+    .responsive-padding {
+      padding: 1.5rem; /* Small screens */
+    }
+  }
+
+  @screen md {
+    .responsive-padding {
+      padding: 2rem; /* Medium screens */
+    }
+  }
+
+  @screen lg {
+    .responsive-padding {
+      padding: 3rem; /* Large screens */
+    }
+  }
+
+  .responsive-text {
+    font-size: 1rem; /* Default font size */
+  }
+
+  @screen sm {
+    .responsive-text {
+      font-size: 1.25rem; /* Small screens */
+    }
+  }
+
+  @screen md {
+    .responsive-text {
+      font-size: 1.5rem; /* Medium screens */
+    }
+  }
+
+  @screen lg {
+    .responsive-text {
+      font-size: 2rem; /* Large screens */
+    }
+  }
+
+  .max-w-container {
+    max-width: 100%;
+  }
+
+  @screen sm {
+    .max-w-container {
+      max-width: 640px;
+    }
+  }
+
+  @screen md {
+    .max-w-container {
+      max-width: 768px;
+    }
+  }
+
+  @screen lg {
+    .max-w-container {
+      max-width: 1024px;
+    }
   }
 }
