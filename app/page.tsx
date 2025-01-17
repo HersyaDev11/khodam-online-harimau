@@ -83,6 +83,7 @@ export default function Home() {
           height={400}
           priority
         />
+        <h1>Hersya</h1>
       </div>
     </main>
   );
